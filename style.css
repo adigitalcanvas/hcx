@@ -11,13 +11,13 @@ html, body {
 
 /* Rules for all Menu links */
 nav a, .menu-item {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
 }
 
 /* Rules for all Footers */
 footer, .footer-text {
-    font-size: 14px;
+    font-size: 18px;
     color: #6c757d;
 }
