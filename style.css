@@ -24,3 +24,14 @@ footer, .footer-text {
     font-size: 18px;
     color: black;
 }*/
+
+footer a {
+    color: black !important;
+    text-decoration: none; /* Optional: removes the underline */
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Optional: shows underline only when hovering */
+    opacity: 0.8; /* Optional: gives a slight fade effect when hovering */
+}
