@@ -25,24 +25,38 @@
             align-items: center;
         }
 
-        /* Navigation */
+        /* Navigation 
         nav {
             width: 100%;
             display: flex;
+            font-size: 16px;
             justify-content: flex-end;
             padding: 40px 15% 0;
             box-sizing: border-box;
             gap: 30px;
         }
+        */
 
+        nav {
+            width: 100%;
+            display: flex;
+            color: var(--text-primary);
+             font-size: 18px; /* controls all links */
+            justify-content: flex-end;
+             padding: 40px 15% 0;
+            box-sizing: border-box;
+         gap: 30px;
+        }
+
+        /* Navigation 
         nav a {
             color: var(--text-primary);
             text-decoration: none;
-            font-size: 13px;
+            font-size: 16px;
             font-weight: 600;
             text-transform: none;
         }
-
+        */
         /* Hero Header */
         header {
             width: 70%;
@@ -264,7 +278,7 @@
     renderTiles();
 </script>
 
-<footer style="margin-top:40px; padding:20px; text-align:center; border-top:1px solid #ccc;">
+<footer style="margin-top:40px; padding:20px; text-align:center; border-top:1px solid #ccc; color: var(--text-primary);">
   <p>
     © 2026  |
     <a href="privacypolicy.html">Privacy Policy</a>
@@ -273,4 +287,4 @@
 <!-- Cloudflare Web Analytics -->
  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "aa64f42c6ba6487bbee421ece09c9d71"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
-</html>
+</html>>
