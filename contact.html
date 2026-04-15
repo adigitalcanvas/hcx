@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        /* UPDATED HOME LINK: Matching adigitalcanvas.github.io style */
+        .home-link {
+            position: fixed;
+            top: 25px;
+            right: 30px;
+            text-decoration: none;
+            /* Using the site's primary text color */
+            color: #1a1a1a; 
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            text-transform: none/* Matches the clean nav style */
+            transition: all 0.2s ease-in-out;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .home-link:hover {
+            /* Using a subtle grey/blue for the hover instead of bright blue */
+            color: #4f46e5; 
+            border-bottom: 2px solid #4f46e5;
+        }
+
+        .contact-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        input, 
+        textarea, 
+        button {
+            width: 100%; 
+            box-sizing: border-box; 
+            margin-bottom: 20px;
+            padding: 14px;
+            border: 1.5px solid #e1e1e1;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #4f46e5;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #4338ca;
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<a href="https://adigitalcanvas.github.io/techblog/" class="home-link">Home</a>
+
+<div class="contact-container">
+    <h2>Send a Message</h2>
+    
+    <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="1dc18d09-3194-4f40-b484-af7b3500cdca">
+        <input type="hidden" name="subject" value="New Submission from GitHub Pages">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        
+        <button type="submit">Submit Form</button>
+    </form>
+</div>
+
+<script>
+    window.onload = function() {
+        document.getElementById("form").reset();
+    };
+</script>
+</body>
+</html>
