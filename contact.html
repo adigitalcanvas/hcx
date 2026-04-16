@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Contact Me</title>
     <style>
-        body {
+     /*   body {
             font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
             display: flex;
             justify-content: center;
@@ -14,8 +14,20 @@
             min-height: 100vh;
             margin: 0;
             background-color: #ccc7c7;
+        } */
+
+        body {
+           font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ccc7c7;
+            position: relative; /* Add this to anchor the absolute child */
         }
 
+        /*
         .home-link {
             font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
             text-decoration: none;
@@ -32,10 +44,27 @@
         }
 
         .home-link:hover {
-            /* Using a subtle grey/blue for the hover instead of bright blue */
+            
             color: #4f46e5; 
             border-bottom: 2px solid #4f46e5;
-        } 
+        } */
+
+        .home_link {
+                position: absolute; /* Takes it out of the flex row */
+                top: 20px;          /* Distance from top */
+                right: 40px;        /* Distance from right */
+    
+                text-decoration: none;
+                color: #1a1a1a;
+                font-size: 18px;
+                font-family: inherit;
+                transition: all 0.3s ease;
+        }
+
+    .home_link:hover {
+            color: #4f46e5; 
+            border-bottom: 2px solid #4f46e5;
+        }
 
         .contact-container {
             background: white;
