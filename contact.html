@@ -61,7 +61,7 @@
                 transition: all 0.3s ease;
         }
 */
-    .home_link {
+/*   .home_link {
         top:20px;
         right:140px;
         text-decoration: none;
@@ -75,6 +75,7 @@
             color: #000002; 
             border-bottom: 2px solid #01010c;
         }
+*/
 
         .contact-container {
             background: white;
@@ -142,15 +143,30 @@
         button:active {
             transform: translateY(0);
         }
+.main-header {
+    position: fixed; /* Stays at the top even if you scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Aligns link to the right */
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
 
+.home_link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+}
    
     </style>
 </head>
 <body>
-<nav>
-    <a href="https://adigitalcanvas.github.io/techblog/" class="home_link">Home</a>
-</nav>
    
+<header class="main-header">
+    <a href="https://adigitalcanvas.github.io/techblog/" class="home_link">Home</a>
+</header>
 
 <div class="contact-container">
 
